@@ -1,0 +1,58 @@
+<div>
+    <div class="main-class">
+        <div class="page-heading">
+            <h4>Colleges in North India</h4>
+        </div>
+        <div class="scroll-ele" infiniteScroll [infiniteScrollDistance]="1" [infiniteScrollThrottle]="3000"
+        (scrolled)="onScroll()" [alwaysCallback]="bool" [infiniteScrollDisabled]="bool2">
+            <div *ngFor="let record of records">
+                <div class="row">
+                    <div class="mat-card"> <!--starting of card-->
+                        <div class="container"> <!--image section-->
+                            <img class="image" [src]="record.image" alt="College image" />
+                            <div *ngIf="record.promoted==true">
+                                <div class="promote-block">
+                                    <p class="promote-text">promoted</p>
+                                </div>
+                            </div>
+                            <div class="rating-block">
+                                <span style="white-space: nowrap;"><h4 class="rate">{{record.rating}}</h4><p class="rate-total">/5</p></span>
+                                <p class="remark ">{{record.rating_remarks}}</p>
+                            </div>
+                            <div class="ranking-block">
+                                <p class="rank-text"><b>#{{record.ranking}}</b></p>
+                            </div>
+                            <div class="tag-block">
+                                <span style="white-space: nowrap;">
+                                    <p class="tag-text">{{record.tags[0]}}</p>
+                                    <p class="tag-text">{{record.tags[1]}}</p>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="left-content"> <!--Content section-->
+                            <span class="clg-name">{{record.college_name}}</span>
+                            <span *ngIf="record.rating===1">&#x2605;&#10025;&#10025;&#10025;&#10025;</span>
+                            <span *ngIf="record.rating===2">&#x2605;&#x2605;&#10025;&#10025;&#10025;</span>
+                            <span *ngIf="record.rating===3">&#x2605;&#x2605;&#x2605;&#10025;&#10025;</span>
+                            <span *ngIf="record.rating===4">&#x2605;&#x2605;&#x2605;&#x2605;&#10025;</span>
+                            <span *ngIf="record.rating===5">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span>
+                            <br><br>
+                            <span class="near-0">{{record.nearest_place[0]}}</span><span class="near-1"> | {{record.nearest_place[1]}}</span>
+                            <p class="blue-clr near-place">93% Match : <span class="near-plc-clr">{{record.famous_nearest_places}}</span></p>
+                            <p class="offer"><span class="offer-span">{{record.offertext}}</span></p>
+                        </div>
+                        
+                        <div class="right-content">
+                            <span style="white-space: nowrap;" class="org-price"><s class="inline_blck">&#x20B9;{{record.original_fees}}</s><span class="inline_blck red-tag">&bull; {{record.discount}}</span></span>
+                            <h1 class="discount-prc">&#x20B9;{{record.discounted_fees}}</h1>
+                            <span class="cycle">{{record.fees_cycle}}</span>
+                            <br><br><br>
+                            <span class="amenity">{{record.amenties[0]}} &bull; {{record.amenties[1]}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

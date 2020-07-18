@@ -1,0 +1,329 @@
+.scroll-ele {
+    height: 100%;
+}
+
+.main-class {
+    margin-left: 4%;
+    height: 100rem;
+}
+
+.page-heading {
+    font-size: 18.5px;
+    font-weight: 500;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-align: left;
+    color: #444444;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.97;
+    letter-spacing: normal;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+
+.row {
+    margin-left: 0px!important;
+    margin-right: 25px!important;
+    margin-bottom: 50px;
+    float: left;
+}
+
+@media screen and (max-width: 991px) {
+    .row .mat-card {
+      width: 100%;
+      height: 377px;
+      display: block;
+      margin-right: 0px!important;
+      margin-bottom: 50px;
+    }
+}
+
+.mat-card {
+    width: 600px;
+    height: 377px;
+    box-shadow: 0 5px 19px 0 rgba(68, 68, 68, 0.1);
+    border: solid 0.2px #adadad;
+    background-color: var(--white);
+    border-radius: 3.8px;
+}
+
+.container {
+    position: relative;
+}
+
+.promote-block {
+    position: absolute;
+    top: -20.72px;
+    right: -1px;
+    background-color: #68a7ff;
+    color: white;
+    padding: 10px 20px 10px 50px;
+    text-align: center;
+    height: 20px;
+}
+
+.promote-block::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    border-bottom: 0px solid transparent;
+    border-left: 30px solid white;
+    border-top: 20px solid transparent;
+}
+
+.promote-block::before {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    content: '';
+    border-bottom: 20px solid transparent;
+    border-left: 30px solid rgb(85, 84, 84);
+    border-top: 0px solid transparent;
+}
+
+.promote-text {
+    font-size: 15px;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+.rating-block {
+    position: absolute;
+    top: 27px;
+    right: 20px;
+    background-color: #f5a626;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-align: center;
+}
+
+.ranking-block {
+    position: absolute;
+    bottom: 13px;
+    right: 20px;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-align: center;
+}
+
+.tag-block {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: #444444;
+    padding: 3px;
+    border-radius: 5px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-align: center;
+}
+
+.tag-text {
+    background-color: #ffffff;
+    padding: 7px;
+    margin-right: 10px;
+    border-radius: 16px;
+    font-size: 12.5px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    display: inline-block;
+}
+
+.rate {
+    font-size: 18.5px;
+    margin: 5px 0 !important;
+    display: inline-block;
+}
+
+.rate-total {
+    font-size: 12.5px;
+    margin: 5px 0 !important;
+    display: inline-block;
+}
+
+.remark {
+    font-size: 12.5px;
+    margin: 5px 0 !important;
+}
+
+.rank-text {
+    font-size: 12.5px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+}
+
+.image {
+    width: 100%;
+    filter: brightness(35%);
+}
+
+@media screen and (max-width: 991px) {
+    .image {
+        height: 200px;
+    }
+}
+
+.clg-name {
+    padding-left: 16px;
+    font-size: 15.5px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.97;
+    letter-spacing: normal;
+    color: #444444;
+}
+
+.left-content {
+    float: left;
+}
+
+.right-content {
+    float: right;
+    margin-top: 0px;
+    padding-right: 16px;
+}
+
+.org-price {
+    text-align: right;
+    float: right;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #444444;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.near-0 {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 12.5px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #444444;
+    padding-left: 16px;
+}
+
+.near-1 {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 12.5px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #adadad;
+}
+
+.near-place {
+    font-size: 12.5px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    padding-left: 16px;
+}
+
+.blue-clr {
+    color: #37b396;
+}
+
+.near-plc-clr {
+    color: #adadad;
+}
+
+.offer {
+    /* padding-left: -16px!important; */
+    background-color: #ccf5e7;
+    border-radius: 0 100px 100px 0;
+    padding: 6px;
+    margin: 8px 0 0 0;
+}
+
+.offer-span {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 12.5px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #444444;
+    padding-left: 10px;
+}
+
+.discount-prc {
+    color: #dd1c26;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-align: right;
+    margin: 30px 0 0 0;
+}
+
+.cycle {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 11.5px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.64;
+    letter-spacing: normal;
+    text-align: right;
+    float: right;
+    color: #444444;
+}
+
+.amenity {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 12.5px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: right;
+    color: #37b396;
+    margin-top: 50px;
+}
+
+.inline_blck {
+    display: inline-block;
+}
+
+.red-tag {
+    background: #dd1c26;
+    display: inline-block;
+    height: 15px;
+    color: #ffffff;
+    margin-left: 20px;
+    padding-right: 7.5px;
+    position: relative;
+    width: 17.5px;
+}
+.red-tag:before {
+    border-top: 7.5px solid transparent;
+    border-right: 15px solid #dd1c26;
+    border-bottom: 7.5px solid transparent;
+    content: "";
+    height: 0;
+    left: -15px;
+    position: absolute;
+    top: 0px;
+    /* width: 0; */
+  }
